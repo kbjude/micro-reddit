@@ -3,11 +3,9 @@
 one:
   user_name: MyString
   email: MyString
-  password: MyString
-  password_confirmation: MyString
+  password_digest: <%= BCrypt::Password.create('secret') %>
 
 two:
   user_name: MyString
   email: MyString
-  password: MyString
-  password_confirmation: MyString
+  password_digest: <%= BCrypt::Password.create('secret') %>
